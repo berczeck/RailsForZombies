@@ -1,0 +1,26 @@
+//http://acko.net/
+
+rails new rails_for_zombies
+
+/*
+subverison centralizado, 1 solo servidor donde esta tod el codigo funete, muchas pcs interactuan con un unico servidor, si se cae el servidor nadie peude segir trabajando, el commit s en el servidor
+git distribuido, todos los nodos tiene su propio repositorio, s euede hacer commit local, push cmabios locales pasarlos al server, git push directo a heroku y otros servidores remotos
+
+para iniciaizar un directorio en git, nos teneoms q ubicar e la raiz del sitio
+os ubir la carpeta target no build
+git ignore = svn ignore
+*/
+git init//repositorio git
+git status//
+
+git add
+//agrega cualquier archivo a git 
+//git add . = agrega recursivamnete tdos los directorios a git
+
+git commit -m "primer commit"
+
+git remote add origin https://berczeck@github.com/berczeck/RailsForZombies.git
+//git remote add "nombre_remote" "url_remote ssh/https"
+git remote
+git push -u origin master
+//error 403 de autenticaion, x el password
